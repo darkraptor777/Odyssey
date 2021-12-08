@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Animation loop="false" name="EclipseS" frameDuration="70">
+  <Frame image="attacks/EclipseS_0.png"></Frame>
+  <Frame image="attacks/EclipseS_1.png"></Frame>
+  <Frame image="attacks/EclipseS_2.png"></Frame>
+</Animation>

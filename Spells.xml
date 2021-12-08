@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Spells>
+  <Spell itemID="FrostSnare">
+    <Stats animWarning="WarningDangerC" animObj="ManticoreShot" animShot="SummonGridS"
+      castSound="woosh_large" shotSound="thud_low" setToGunPoint="Both" timeToTravel="0.7"
+      bending="100"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>Frost Snare</Name>
+    <Tags>Player, PvP, Demo, Live</Tags>
+    <Action>Mortar</Action>
+    <Description></Description>
+    <Meta>Throw a timed frost snare to a tile.</Meta>
+	<Description>Summon a snare 4 tiles away which explodes after 2.5 seconds applying 2 ef.Frost and ef.Root for 2 seconds.</Description>
+	<Flavor>No shard feelings</Flavor>
+    <Rarity>1</Rarity>
+    <Brand>Anima</Brand>
+    <Mana>2</Mana>
+    <Damage>60</Damage>
+    <Shots>1</Shots>
+    <Tiles>1</Tiles>
+    <Location>HalfField</Location>
+    <TimeBetweenShots>0</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <ShotDuration>0.1</ShotDuration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <CastDuration></CastDuration>
+    <BlastDuration></BlastDuration>
+    <WarningDuration>0</WarningDuration>
+    <DestroyOnHit></DestroyOnHit>
+    <TouchTile amount="60" value="FrostSnareStruct">Summon</TouchTile>
+  </Spell>
+  <Spell itemID="FrostSnareTimer">
+    <HitAllies></HitAllies>
+    <HitSelf></HitSelf>
+    <Name>FrostSnareTimer</Name>
+    <Tags>Cpu</Tags>
+    <Action>Timerbar</Action>
+    <Description></Description>
+    <Meta>Timerbar</Meta>
+    <Damage>Zero</Damage>
+    <Shots>1</Shots>
+    <Tiles>1</Tiles>
+    <ShotDelay></ShotDelay>
+    <CastDuration></CastDuration>
+    <BlastDuration></BlastDuration>
+    <DestroyOnHit></DestroyOnHit>
+    <Params closetime="2.5"></Params>
+    <OnCast></OnCast>
+  </Spell>
+  <Spell itemID="FrostSnareExplosion">
+    <Stats animBlast="ExplosionIce3x3" animShot="" castSound="explosion_bump" shotSound=""
+      setToGunPoint="None" hitboxHeight="3" hitboxWidth="3"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf>true</HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>FrostSnareExplosion</Name>
+    <Tags>Cpu</Tags>
+    <Action>Multishot</Action>
+    <Description></Description>
+    <Meta>3x3 explosion on self</Meta>
+    <Mana>0</Mana>
+    <Damage>Zero</Damage>
+    <Shots>Infinite</Shots>
+    <Tiles>1</Tiles>
+    <Location>Current</Location>
+    <TimeBetweenShots>1</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <ShotDuration>0.1</ShotDuration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <BlastDuration>0</BlastDuration>
+    <DestroyOnHit>false</DestroyOnHit>
+	<OnHit amount="2" target="Hit">Frost</OnHit>
+	<OnHit duration="2">Root</OnHit>
+  </Spell>
+  <Spell itemID="FrostSnareExplosion2">
+    <Stats animBlast="" animShot="" castSound="" shotSound=""
+      setToGunPoint="None" hitboxHeight="1" hitboxWidth="1"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf>true</HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>FrostSnareExplosion2</Name>
+    <Tags>Cpu</Tags>
+    <Action>Multishot</Action>
+    <Description></Description>
+    <Meta>1x1 explosion on self to kill snare.</Meta>
+    <Mana>0</Mana>
+    <Damage>Zero</Damage>
+    <Shots>Infinite</Shots>
+    <Tiles>1</Tiles>
+    <Location>Current</Location>
+    <TimeBetweenShots>1</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <ShotDuration>0.1</ShotDuration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <BlastDuration>0</BlastDuration>
+    <DestroyOnHit>false</DestroyOnHit>
+	<OnHit amount="80" target="Hit">Hit</OnHit>
+  </Spell>
+  <Spell itemID="RollingThunder">
+    <Stats animWarning="WarningDangerC" animBlast="Thunder" shotSound="thunderclap" animShot="" ></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>Rolling Thunder</Name>
+    <Tags>Player, PvP</Tags>
+    <Action>Storm</Action>
+    <Description></Description>
+    <Meta>Thunder hits all tiles in front of you</Meta>
+	<Description>Thunder hits all tiles in front.</Description>
+	<Flavor>Thunderous applause!</Flavor>
+    <Rarity>1</Rarity>
+    <Brand>Anima</Brand>
+    <Mana>2</Mana>
+    <Damage>80</Damage>
+    <Shots>-1</Shots>
+    <Tiles>0</Tiles>
+    <Location>FrontAll</Location>
+    <TimeBetweenShots>0.2</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <ShotDuration>0.2</ShotDuration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <BlastDuration>0.5</BlastDuration>
+    <WarningDuration>0.6</WarningDuration>
+    <DestroyOnHit>true</DestroyOnHit>
+    <Params lerpDirection="None" lerpPattern="None" lerpDelay="0"></Params>
+  </Spell>
+  <Spell itemID="DarkestDagger">
+    <Stats animBlast="KnifeMark" animShot="KunaiShot" shotSound="knife_throw" setToGunPoint="Both"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>Darkest Dagger</Name>
+    <Tags>Player, PvP</Tags>
+	<Action>Multishot</Action>
+    <Action>Darkness</Action>
+    <Description></Description>
+    <Meta>Blackout screen and fire a piercing dagger.</Meta>
+	<Description>Darken screen and fire a piercing dagger that applies 80 ef.Poison. </Description>
+	<Flavor>The slow death - unforeseen, unforgiving</Flavor>
+    <Rarity>2</Rarity>
+    <Brand>Miseri</Brand>
+    <Mana>2</Mana>
+    <Damage>120</Damage>
+    <Shots>1</Shots>
+    <Tiles>1</Tiles>
+    <Location>End</Location>
+    <TimeBetweenShots>0</TimeBetweenShots>
+    <ShotVelocity>1000</ShotVelocity>
+    <ShotDuration>0.4</ShotDuration>
+    <ShotDelay>0.1</ShotDelay>
+    <CastDelay>0.1</CastDelay>
+    <BlastDuration>0</BlastDuration>
+    <DestroyOnHit>false</DestroyOnHit>
+	<OnCast>Consume</OnCast>
+	<OnHit amount="80">Poison</OnHit>
+  </Spell>
+  <Spell itemID="Eclipse">
+    <Stats animCast="EclipseS" animShot="" introSound="misc_shimmer"
+      shotSound="misc_shimmer_tiny" setToGunPoint="None"></Stats>
+    <HitAllies></HitAllies>
+    <HitSelf>true</HitSelf>
+    <Name>Eclipse</Name>
+    <Tags>Player, PvP</Tags>
+    <Action>Multishot</Action>
+    <Description></Description>
+    <Meta>Freeze for 0.5 sec to add 4 Eclipse Beams to your deck</Meta>
+	<Description>Freeze for 0.5 sec to add 4 Eclipse Beams to your deck. </Description>
+	<Flavor>The dark moon comes</Flavor>
+    <Rarity>3</Rarity>
+    <Brand>Glimmer</Brand>
+    <Mana>4</Mana>
+    <Damage>Zero</Damage>
+    <Shots>1</Shots>
+    <Tiles>0</Tiles>
+    <Location>Current</Location>
+    <TimeBetweenShots>0</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <ShotDuration>0.1</ShotDuration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0.5</CastDelay>
+    <CastDuration>0.5</CastDuration>
+    <DestroyOnHit>false</DestroyOnHit>
+    <OnCast>Anchor</OnCast>
+    <OnHit amount="4" value="EclipseBeam" target="Self">AddToDeck</OnHit>
+  </Spell>
+  <Spell itemID="EclipseBeam">
+    <Stats animBlast="EclipseBeamL" shotSound="beam_shot_low" animShot=""></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures>false</HitStructures>
+    <Name>Eclipse Beam</Name>
+    <Action>Storm</Action>
+    <Description></Description>
+    <Meta>Strikes a random enemy</Meta>
+    <Rarity>3</Rarity>
+    <Brand>Glimmer</Brand>
+    <Mana>0</Mana>
+    <Damage>80</Damage>
+    <Shots>1</Shots>
+    <Tiles>0</Tiles>
+    <Location>RandEnemy</Location>
+    <TimeBetweenShots>0.2</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <ShotDuration>0.2</ShotDuration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <CastDuration>0</CastDuration>
+    <BlastDuration>0.4</BlastDuration>
+    <DestroyOnHit>false</DestroyOnHit>
+	<OnCast>Consume</OnCast>
+	<OnHit duration="0.4">Root</OnHit>
+  </Spell>
+</Spells>

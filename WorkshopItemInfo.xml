@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<WorkshopItemInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PublishedFileId>2460549048</PublishedFileId>
+  <Name>Odyssey</Name>
+  <Description>A small collection of spells designed to fit in with the vanilla game.
+
+Added spells include: Frost Snare, Darkest Dagger, Rolling Thunder, Eclipse, and Eclipse Beam.</Description>
+  <IconFileName>workshopIcon.png</IconFileName>
+  <Tags>
+    <string>Spells</string>
+  </Tags>
+  <Priority>0</Priority>
+  <ModVersion>0</ModVersion>
+  <GameVersion>1.7.0</GameVersion>
+</WorkshopItemInfo>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Beings>
+  <Being beingID="SelicyTest">
+    <Name>Selicy</Name>
+    <Title>Test</Title>
+    <Tags>Campaign, Selicy, Attack</Tags>
+    <Description>Over your cold, dead body.</Description>
+    <Flavor>Loves the cold and sharing the things she loves.</Flavor>
+    <Weapon>SelicyFrostStep</Weapon>
+    <Health>1000</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>10</Money>
+    <MaxMana>9</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>1.0</ManaRegen>
+    <ShuffleTime>0.5</ShuffleTime>
+    <GracePeriod>0.03</GracePeriod>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>FrostSnare</Deck>
+    <Deck>RollingThunder</Deck>
+    <Deck>Eclipse</Deck>
+    <Deck>DarkestDagger</Deck>
+    <Artifacts>Bulwark</Artifacts>
+    <Stats localGunPointPos="30,26" animName="Selicy" altAnims="SelicyCatgirl, SelicyHoliday"
+      splashSprite="SelicySplash" startingBrands="None,None"></Stats>
+  </Being>
+  
+</Beings>
